@@ -1,0 +1,91 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: url(../images/bg-desktop.svg) center center no-repeat;
+    background-size: cover;
+    background-color: var(--violet);
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.header{
+    display: flex;
+    padding: 55px 70px;
+}
+
+.header img{
+    max-height: 53px;
+}
+
+
+.main-content{
+    display: flex;
+    padding: 30px 72px 0 72px;
+}
+
+.content{
+    margin: 42px 20px 50px 51px;
+}
+
+.content h1,
+.content p,
+.content button{
+    margin-bottom: 27px;
+}
+
+.content h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.content p{
+    font-size: 1.8rem;
+}
+
+.button{
+    background-color: #fff;
+    width: 200px;
+    padding: 15px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color: var(--violet);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 22px 82px;
+}
+
+.footer .social-midias{
+    display: flex;
+    align-self: flex-end;
+}
+
+.footer .social-midias .circle-social-midia{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: #fff solid 2px;
+    margin-left: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .social-midias .circle-social-midia i{
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.footer .social-midias .circle-social-midia:hover{
+    color: var(--violet);
+}
+

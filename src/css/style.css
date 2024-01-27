@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    background: url(../images/bg-desktop.svg) center center no-repeat;
+    background: url(../images/bg-desktop.svg) no-repeat;
     background-size: cover;
     background-color: var(--violet);
     height: 100vh;
@@ -21,20 +21,19 @@ body{
     max-height: 53px;
 }
 
-
 .main-content{
     display: flex;
-    padding: 30px 72px 0 72px;
+    margin: 30px 72px 0 72px;
 }
 
 .content{
-    margin: 42px 20px 50px 51px;
+    margin: 43px 20px 53px 52px;
 }
 
 .content h1,
 .content p,
 .content button{
-    margin-bottom: 27px;
+    margin-bottom: 22px;
 }
 
 .content h1{
@@ -45,6 +44,7 @@ body{
 
 .content p{
     font-size: 1.8rem;
+    line-height: 27px;
 }
 
 .button{
@@ -61,7 +61,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 22px 82px;
+    padding: 22px 72px;
 }
 
 .footer .social-midias{
@@ -74,8 +74,8 @@ body{
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    border: #fff solid 2px;
-    margin-left: 15px;
+    border: 2px solid #fff ;
+    margin: 0 8px;
     align-items: center;
     justify-content: center;
 }
@@ -89,3 +89,70 @@ body{
     color: var(--violet);
 }
 
+@media(max-width: 375px){
+
+    body{
+        background: url(../images/bg-mobile.svg) no-repeat;
+        background-color: var(--violet);
+    }
+
+    .header{
+        padding: 32px;
+    }
+
+    .header img{
+        height: 33px;
+    }
+
+    .main-content{
+        display: block;
+        margin: 30px 35px;
+        text-align: center;
+    }
+
+    .main-content img{
+        height: 215px;
+    }
+
+    .content{
+        margin: 55px 10px 0 10px;
+    }
+
+    .content h1,
+    .content p,
+    .content button{
+        margin-bottom: 15px;
+    }
+
+    .content h1{
+        font-size: 2.4rem;
+    }
+
+    .content p{
+        font-size: 1.5rem;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    .button{
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .footer{
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    .footer .social-midias .circle-social-midia{
+        width: 27px;
+        height: 27px;
+        margin: 5px;
+        border-width: 1px;
+    }
+
+    .footer .social-midias .circle-social-midia i{
+        font-size: 1.5rem;
+    }
+}

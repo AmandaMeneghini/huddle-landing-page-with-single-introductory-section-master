@@ -97,7 +97,7 @@ body{
     }
 
     .header{
-        padding: 32px;
+        padding: 33px 32px;
     }
 
     .header img{
@@ -106,16 +106,16 @@ body{
 
     .main-content{
         display: block;
-        margin: 30px 35px;
+        margin: 29px 35px;
         text-align: center;
     }
 
     .main-content img{
-        height: 215px;
+        max-height: 215px;
     }
 
     .content{
-        margin: 55px 10px 0 10px;
+        margin: 58px 9px 0 9px;
     }
 
     .content h1,
@@ -130,8 +130,8 @@ body{
 
     .content p{
         font-size: 1.5rem;
-        line-height: 25px;
-        margin-bottom: 20px;
+        line-height: 24px;
+        margin-bottom: 24px;
     }
 
     .button{
@@ -142,6 +142,7 @@ body{
     .footer{
         flex-direction: row;
         justify-content: center;
+        padding-top: 14px;
         
     }
 

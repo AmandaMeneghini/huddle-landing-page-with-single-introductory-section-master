@@ -96,7 +96,7 @@ body{
     color: var(--soft-magenta);
 }
 
-@media(max-width: 1300px){
+@media(max-width: 1300px){ /*Coloquei por conta da quebra do conteúdo mas por particularidade minha*/
     .initial-section{
         flex-direction: column;
     }

@@ -4,11 +4,8 @@ html{
 
 body{
     background: url(../images/bg-desktop.svg) no-repeat;
-    background-size: cover;
     background-color: var(--violet);
-    height: 100vh;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
     color: #fff;
 }
 
@@ -21,28 +18,28 @@ body{
     max-height: 53px;
 }
 
-.main-content{
+.initial-section{
     display: flex;
     margin: 30px 72px 0 72px;
 }
 
-.content{
+.content-initial-section{
     margin: 43px 20px 53px 52px;
 }
 
-.content h1,
-.content p,
-.content button{
+.content-initial-section h1,
+.content-initial-section p,
+.content-initial-section button{
     margin-bottom: 22px;
 }
 
-.content h1{
+.content-initial-section h1{
     font-family: 'Poppins', sans-serif;
     font-size: 4rem;
     font-weight: 600;
 }
 
-.content p{
+.content-initial-section p{
     font-size: 1.8rem;
     line-height: 27px;
 }
@@ -55,6 +52,14 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
     color: var(--violet);
+    box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--soft-magenta);
 }
 
 .footer{
@@ -78,81 +83,103 @@ body{
     margin: 0 8px;
     align-items: center;
     justify-content: center;
+    color: #fff;
+    transition: 0.3s ease-in-out;
 }
 
 .footer .social-midias .circle-social-midia i{
     font-size: 1.6rem;
-    color: #fff;
 }
 
 .footer .social-midias .circle-social-midia:hover{
-    color: var(--violet);
+    border-color: var(--soft-magenta) ;
+    color: var(--soft-magenta);
 }
 
-@media(max-width: 375px){
-
-    body{
-        background: url(../images/bg-mobile.svg) no-repeat;
-        background-color: var(--violet);
+@media(max-width: 1300px){
+    .initial-section{
+        flex-direction: column;
     }
 
-    .header{
-        padding: 33px 32px;
-    }
-
-    .header img{
-        height: 33px;
-    }
-
-    .main-content{
-        display: block;
-        margin: 29px 35px;
-        text-align: center;
-    }
-
-    .main-content img{
-        max-height: 215px;
-    }
-
-    .content{
-        margin: 58px 9px 0 9px;
-    }
-
-    .content h1,
-    .content p,
-    .content button{
-        margin-bottom: 15px;
-    }
-
-    .content h1{
-        font-size: 2.4rem;
-    }
-
-    .content p{
-        font-size: 1.5rem;
-        line-height: 24px;
-        margin-bottom: 24px;
-    }
-
-    .button{
-        font-size: 1.2rem;
-        padding: 10px;
+    .content-initial-section{
+        margin: auto auto;
     }
 
     .footer{
         flex-direction: row;
         justify-content: center;
-        padding-top: 14px;
-        
+    }
+}
+
+@media(max-width: 375px){
+    
+    body{
+        background: url(../images/bg-mobile.svg) no-repeat;
+        background-color: var(--violet);
+    }
+    
+    .header{
+        padding: 33px 32px;
+    }
+    
+    .header img{
+        height: 33px;
+    }
+    
+    .initial-section{
+        display: block;
+        margin: 28px 38px;
+        text-align: center;
     }
 
+    .initial-section img{
+        max-height: 215px;
+    }
+
+    .content-initial-section{
+        margin: 58px 9px 0 9px;
+    }
+    
+    .content-initial-section h1,
+    .content-initial-section p,
+    .content-initial-section button{
+        margin-bottom: 15px;
+    }
+    
+    .content-initial-section h1{
+        font-size: 2.4rem;
+    }
+    
+    .content-initial-section p{
+        font-size: 1.5rem;
+        line-height: 24px;
+        margin-bottom: 26px;
+    }
+    
+    .button{
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    
+    .footer{
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 16px;
+        
+    }
+    
     .footer .social-midias .circle-social-midia{
         width: 27px;
         height: 27px;
         margin: 5px;
         border-width: 1px;
     }
-
+    
+    .footer .social-midias .circle-social-midia:active{
+        border-color: var(--soft-magenta) ;
+        color: var(--soft-magenta);
+    }
+    
     .footer .social-midias .circle-social-midia i{
         font-size: 1.5rem;
     }

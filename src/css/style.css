@@ -3,10 +3,14 @@ html{
 }
 
 body{
-    background: url(../images/bg-desktop.svg) no-repeat;
+    background: url(../images/bg-desktop.svg) center center no-repeat;
+    background-size: cover;
     background-color: var(--violet);
     font-family: 'Open Sans', sans-serif;
     color: #fff;
+    max-width: 1440px;
+    margin: auto;
+    height: 100vh;
 }
 
 .header{
@@ -20,11 +24,15 @@ body{
 
 .initial-section{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh; 
     margin: 30px 72px 0 72px;
 }
 
 .content-initial-section{
     margin: 43px 20px 53px 52px;
+    max-height: 70%;
 }
 
 .content-initial-section h1,
@@ -62,14 +70,15 @@ body{
     background-color: var(--soft-magenta);
 }
 
-.footer{
+
+.footer .social-midias{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 22px 72px;
 }
 
-.footer .social-midias{
+.footer .social-midias ul{
     display: flex;
     align-self: flex-end;
 }
@@ -94,93 +103,4 @@ body{
 .footer .social-midias .circle-social-midia:hover{
     border-color: var(--soft-magenta) ;
     color: var(--soft-magenta);
-}
-
-@media(max-width: 1300px){ /*Coloquei por conta da quebra do conteúdo mas por particularidade minha*/
-    .initial-section{
-        flex-direction: column;
-    }
-
-    .content-initial-section{
-        margin: auto auto;
-    }
-
-    .footer{
-        flex-direction: row;
-        justify-content: center;
-    }
-}
-
-@media(max-width: 375px){
-    
-    body{
-        background: url(../images/bg-mobile.svg) no-repeat;
-        background-color: var(--violet);
-    }
-    
-    .header{
-        padding: 33px 32px;
-    }
-    
-    .header img{
-        height: 33px;
-    }
-    
-    .initial-section{
-        display: block;
-        margin: 28px 38px;
-        text-align: center;
-    }
-
-    .initial-section img{
-        max-height: 215px;
-    }
-
-    .content-initial-section{
-        margin: 58px 9px 0 9px;
-    }
-    
-    .content-initial-section h1,
-    .content-initial-section p,
-    .content-initial-section button{
-        margin-bottom: 15px;
-    }
-    
-    .content-initial-section h1{
-        font-size: 2.4rem;
-    }
-    
-    .content-initial-section p{
-        font-size: 1.5rem;
-        line-height: 24px;
-        margin-bottom: 26px;
-    }
-    
-    .button{
-        font-size: 1.2rem;
-        padding: 10px;
-    }
-    
-    .footer{
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 16px;
-        
-    }
-    
-    .footer .social-midias .circle-social-midia{
-        width: 27px;
-        height: 27px;
-        margin: 5px;
-        border-width: 1px;
-    }
-    
-    .footer .social-midias .circle-social-midia:active{
-        border-color: var(--soft-magenta) ;
-        color: var(--soft-magenta);
-    }
-    
-    .footer .social-midias .circle-social-midia i{
-        font-size: 1.5rem;
-    }
 }

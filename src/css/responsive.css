@@ -1,0 +1,116 @@
+html{
+    font-size: 62.5%;
+}
+
+@media(max-width: 1300px){
+    .initial-section{
+        flex-direction: column;
+    }
+    .initial-section img{
+        max-height: 315px;
+        margin-bottom: 20px;
+    }
+
+    .initial-section .content-initial-section{
+        margin: auto auto;
+        max-width: 441px;
+    }
+
+    .content-initial-section h1{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .footer{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer .social-midias{
+        padding: 22px 72px;
+    }
+}
+
+@media(max-width: 425px){
+    
+    body{
+        background: url(../images/bg-mobile.svg) no-repeat;
+        background-size: cover;
+        background-color: var(--violet);
+    }
+    
+    .header{
+        padding: 33px 32px;
+    }
+    
+    .header img{
+        height: 33px;
+    }
+    
+    .initial-section{
+        display: block;
+        margin: 28px 38px;
+        text-align: center;
+    }
+
+    .initial-section img{
+        max-height: 215px;
+    }
+
+    .content-initial-section{
+        margin: 58px 9px 0 9px;
+    }
+    
+    .content-initial-section h1,
+    .content-initial-section p,
+    .content-initial-section button{
+        margin-bottom: 15px;
+    }
+    
+    .content-initial-section h1{
+        font-size: 2.4rem;
+    }
+    
+    .content-initial-section p{
+        font-size: 1.5rem;
+        line-height: 24px;
+        margin-bottom: 26px;
+    }
+    
+    .button{
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    
+    .footer .social-midias{
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 16px;
+    }
+    
+    .footer .social-midias .circle-social-midia{
+        width: 27px;
+        height: 27px;
+        margin: 5px;
+        border-width: 1px;
+    }
+    
+    .footer .social-midias .circle-social-midia:active{
+        border-color: var(--soft-magenta) ;
+        color: var(--soft-magenta);
+    }
+    
+    .footer .social-midias .circle-social-midia i{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-height: 790px){
+    .header{
+        padding: 40px
+    }
+
+    .header img{
+        max-height: 30px;
+    }
+}

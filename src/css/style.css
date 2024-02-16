@@ -7,7 +7,7 @@ body{
     background-size: cover;
     background-color: var(--violet);
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
+    color: var(--white);
     max-width: 1440px;
     margin: auto;
     height: 100vh;
@@ -21,6 +21,7 @@ body{
 .header img{
     max-height: 53px;
 }
+
 
 .initial-section{
     display: flex;
@@ -53,7 +54,7 @@ body{
 }
 
 .button{
-    background-color: #fff;
+    background-color: var(--white);
     width: 200px;
     padding: 15px;
     border-radius: 50px;
@@ -66,7 +67,7 @@ body{
 
 .button:hover{
     cursor: pointer;
-    color: #fff;
+    color: var(--white);
     background-color: var(--soft-magenta);
 }
 
@@ -88,11 +89,11 @@ body{
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    border: 2px solid #fff ;
+    border: 2px solid var(--white) ;
     margin: 0 8px;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: var(--white);
     transition: 0.3s ease-in-out;
 }
 

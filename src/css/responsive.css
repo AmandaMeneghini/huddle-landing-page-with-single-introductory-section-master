@@ -31,7 +31,7 @@ html{
     }
 }
 
-@media(max-width: 425px){
+@media(max-width: 481px){
     
     body{
         background: url(../images/bg-mobile.svg) no-repeat;
